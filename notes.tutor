@@ -1,0 +1,195 @@
+Day 1 – Understanding the Web and HyperText Markup Language
+
+Before writing code, you must understand what actually happens when you open a website.
+
+When you type:
+
+https://example.com
+
+The following sequence happens:
+
+The browser contacts the Domain Name System.
+Domain Name System converts human-readable names like example.com into an Internet Protocol address.
+
+The browser gets the Internet Protocol address of the server.
+
+The browser sends an HyperText Transfer Protocol request to that server.
+
+The server responds with a document written in HyperText Markup Language.
+
+The browser reads the HyperText Markup Language and builds a structure called the Document Object Model.
+
+The browser loads Cascading Style Sheets to style the document.
+
+The browser executes JavaScript code to add interactivity.
+
+The final visual page is rendered on your screen.
+
+This mental model is essential. Full stack development means understanding both client side and server side.
+
+Step 1 – Setting Up Your Project Environment
+
+Since you are using a Linux distribution, we will do this properly.
+
+Open your terminal and run:
+
+mkdir web-journey
+cd web-journey
+touch index.html
+
+Explanation:
+
+mkdir means make directory.
+
+cd means change directory.
+
+touch creates a file.
+
+You now have:
+
+web-journey/
+    index.html
+Step 2 – The Minimum Valid HyperText Markup Language Document
+
+Open index.html and write this:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvis Web Journey</title>
+</head>
+<body>
+    <h1>Welcome to My Web Journey</h1>
+    <p>This is Day 1 of learning full stack development.</p>
+</body>
+</html>
+
+Now open it in your browser:
+
+xdg-open index.html
+Explanation of Every Single Line
+<!DOCTYPE html>
+
+This tells the browser to use HyperText Markup Language version 5 parsing rules.
+
+Without this, the browser may enter "quirks mode," which can cause layout inconsistencies.
+
+<html lang="en">
+
+This is the root element of the entire document.
+
+lang="en" means the language of the document is English.
+This helps screen readers, accessibility tools, and search engines.
+
+<head>
+
+Contains metadata.
+
+Metadata means "data about data."
+It is not visible on the page.
+
+<meta charset="UTF-8">
+
+Character encoding declaration.
+
+UTF-8 stands for Unicode Transformation Format, 8-bit.
+It allows special characters, symbols, and emojis to display correctly.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+This controls how the page behaves on mobile devices.
+
+width=device-width means match screen width.
+
+initial-scale=1.0 means initial zoom level is 100 percent.
+
+Without this, mobile layout becomes broken.
+
+<title>
+
+The text displayed in the browser tab.
+
+<body>
+
+Contains all visible content.
+
+<h1>
+
+Heading level one.
+
+There should usually be only one main heading per page for semantic structure.
+
+<p>
+
+Paragraph element.
+
+Understanding Structure: The Document Object Model
+
+The browser converts your document into a tree structure called the Document Object Model.
+
+It looks like this conceptually:
+
+Document
+ └── html
+      ├── head
+      └── body
+           ├── h1
+           └── p
+
+Each element becomes a node in a tree.
+
+This tree is what JavaScript will manipulate later.
+
+Important Concept: Block-Level vs Inline Elements
+
+Block-level elements:
+
+Start on a new line.
+
+Take full available width.
+
+Examples: div, p, h1, section.
+
+Inline elements:
+
+Do not start on a new line.
+
+Only take as much width as necessary.
+
+Examples: span, a, strong.
+
+This distinction becomes critical when learning Cascading Style Sheets.
+
+Your Required Practice
+
+Modify your page and add:
+
+A second paragraph.
+
+A hyperlink using the anchor element:
+
+<a href="https://www.google.com">Visit Google</a>
+
+An image using:
+
+<img src="image-url-here" alt="Description of image">
+
+An unordered list using:
+
+<ul>
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+</ul>
+
+Understand every attribute:
+
+href means HyperText Reference.
+
+src means source.
+
+alt means alternative text.
+
+

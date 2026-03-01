@@ -64,6 +64,7 @@ a:hover {
 	align-items: stretch;
 	color: white;
 	transition: all 0.3s;
+	transform: translate(0px, -5px);
 }
 
 footer {

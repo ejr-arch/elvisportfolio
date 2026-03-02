@@ -20,6 +20,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-weight: bolder;
 	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	padding: 2px;
 	background-color: papayawhip;
 	display: flex;
@@ -72,6 +73,7 @@ a:hover {
 	color: white;
 	transition: all 0.3s;
 	transform: translate(0px, -5px);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 footer {
@@ -91,6 +93,7 @@ section {
 	border-radius: 10px;
 	padding: 10px;
 	background-color: papayawhip;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 img {

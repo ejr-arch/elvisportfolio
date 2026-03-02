@@ -54,7 +54,9 @@ body {
 	align-items: center;
 	margin-left: auto;
 	font-family: system-ui;
-	font-size: 30px;
+	font-size: 25px;
+	font-weight: bolder;
+	padding: 10px;
 
 }
 
@@ -110,7 +112,7 @@ p {
 	padding-bottom: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	font-size: 15px;
+	font-size: 20px;
 	font-family: system-ui;
 	font-weight: bolder;
 }

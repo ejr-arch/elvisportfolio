@@ -23,6 +23,7 @@ body {
 	padding: 2px;
 	background-color: papayawhip;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -35,6 +36,9 @@ body {
 
 #main-nav {
 	display: flex;
+	flex-wrap: wrap;
+	font-family: system-ui;
+	/*margin-top: 1rem;
 	/*margin-left: 1rem;*/
 	justify-items: left;
 	align-items: center;
@@ -44,6 +48,7 @@ body {
 
 #contacts-nav {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	margin-left: auto;
@@ -54,6 +59,8 @@ body {
 
 a {
 	border-radius: 7px;
+	display: inline-block;
+	margin: 0px 10px;
 	padding-left: 12px;
 	padding-right: 12px;
 	text-decoration-line: none;
@@ -100,7 +107,7 @@ p {
 	padding-bottom: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	font-size: 25px;
+	font-size: 15px;
 	font-family: system-ui;
 	font-weight: bolder;
 }

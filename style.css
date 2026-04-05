@@ -139,3 +139,27 @@ h2 {
 	color: yellow;
 	border-spacing: 5px;
 }
+
+
+@media screen and (max-width: 600px) {
+
+	#page-title,
+	#main-nav,
+	#contacts-nav {
+		display: flex;
+		/* Required for flex-direction to work */
+		flex-direction: column;
+		/* Stacks items vertically */
+		align-items: center;
+		/* Optional: centers items in the column */
+	}
+
+	#page-title {
+		font-size: 30px;
+	}
+
+	#main-nav,
+	#contacts-nav {
+		font-size: 20px;
+	}
+}

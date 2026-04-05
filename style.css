@@ -81,7 +81,7 @@ a {
 	text-decoration-line: none;
 }
 
-#contacts-nav a:hover {
+#contacts-nav a i:hover {
 	color: yellow;
 }
 

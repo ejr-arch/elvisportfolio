@@ -55,8 +55,18 @@ body {
 	padding: 10px;
 }
 
+#contacts {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 2;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+
 /*#content {
 	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
 }*/
 
 #contacts-nav {
@@ -145,7 +155,7 @@ h2 {
 
 	#page-title,
 	#main-nav,
-	#contacts-nav {
+	#contacts {
 		display: flex;
 		/* Required for flex-direction to work */
 		flex-direction: column;
@@ -155,11 +165,11 @@ h2 {
 	}
 
 	#page-title {
-		font-size: 30px;
+		font-size: 20px;
 	}
 
 	#main-nav,
 	#contacts-nav {
-		font-size: 20px;
+		font-size: 25px;
 	}
 }

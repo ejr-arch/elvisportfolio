@@ -2,8 +2,9 @@
 <html lang="en-us">
 
 <head>
-	<title>Elvis | CV</title>
+	<title>Elvis Kwagala | Systems & Web Developer</title>
 	<meta charset="utf-8">
+	<meta name="description" content="Portfolio of Elvis Kwagala — systems programmer and full-stack web developer">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<script src="https://kit.fontawesome.com/b5e537861b.js" crossorigin="anonymous"></script>
@@ -11,53 +12,160 @@
 
 <body>
 	<header id="page-title">
-		<h1 id="h1" style="text-align:left;"><strong>Elvis' Web Portfolio</strong></h1>
+		<h1 id="h1">Elvis Kwagala</h1>
 		<nav id="main-nav">
 			<a href="#about">About</a>
 			<a href="#skills">Skills</a>
 			<a href="#projects">Projects</a>
-			<a href="#contacts">Contacts</a>
+			<a href="#contacts">Contact</a>
 		</nav>
 	</header>
 
 	<main id="content">
 		<section id="about">
-			<p id="about-text">
-				I am a student systems designer, programmer majorly interested in low level systems
-				programming, embedded systems providing balanced speed and memory efficiency with no
-				mega trade offs...so enthusiastic about edge computing. Am a full stack web developer in
-				progress, with minor skills in HTML, CSS and Javascript(....so far, but with time,
-				heeeeee..😉). I use arch btw, Neovim is my editor. Open-source oriented(GNU/Linux) and
-				in love with CLI's.
-			</p>
+			<div id="about-text">
+				<h2>About Me</h2>
+				<p>
+					Systems designer and programmer focused on low-level systems programming and
+					embedded systems. I write software that balances performance and memory efficiency
+					without major trade-offs. I'm also a full-stack web developer building practical
+					applications with modern web technologies.
+				</p>
+				<p>
+					Open-source enthusiast running Arch Linux, editing in Neovim, and living in the CLI.
+					I believe in understanding the stack from the metal up.
+				</p>
+			</div>
 		</section>
+
 		<section id="skills">
-			<h2>My Skills👨‍💻(..or my skill issues😂)</h2>
-			<p>
-				i can explain😂😂😂😂...you see these things when you decide to learn, they become
-				many😂😂....just kidding🌚. Intermediate C programming skills, junior Java programming
-				skills, junior web dev't(html,css and javascript) and still struggling with many more😁
-			</p>
+			<h2>Skills & Technologies</h2>
+			<div class="skills-grid">
+				<div class="skill-card">
+					<i class="fa-solid fa-code"></i>
+					<h3>C</h3>
+					<p>Systems programming, data structures, CLI tools</p>
+				</div>
+				<div class="skill-card">
+					<i class="fa-brands fa-java"></i>
+					<h3>Java</h3>
+					<p>Object-oriented programming, basic application dev</p>
+				</div>
+				<div class="skill-card">
+					<i class="fa-brands fa-html5"></i>
+					<h3>HTML & CSS</h3>
+					<p>Semantic markup, responsive layouts, flexbox/grid</p>
+				</div>
+				<div class="skill-card">
+					<i class="fa-brands fa-js"></i>
+					<h3>JavaScript</h3>
+					<p>DOM manipulation, async patterns, ES6+</p>
+				</div>
+				<div class="skill-card">
+					<i class="fa-brands fa-linux"></i>
+					<h3>Linux / Arch</h3>
+					<p>Daily driver, shell scripting, system administration</p>
+				</div>
+				<div class="skill-card">
+					<i class="fa-solid fa-terminal"></i>
+					<h3>Neovim</h3>
+					<p>Custom config (Lua), IDE-like workflow, LSP integration</p>
+				</div>
+				<div class="skill-card">
+					<i class="fa-brands fa-git-alt"></i>
+					<h3>Git & GitHub</h3>
+					<p>Version control, collaboration, open-source workflow</p>
+				</div>
+				<div class="skill-card">
+					<i class="fa-solid fa-microchip"></i>
+					<h3>Embedded Systems</h3>
+					<p>Low-level programming, resource-constrained environments</p>
+				</div>
+			</div>
 		</section>
+
 		<section id="projects">
-			<h2>My Projects👨‍💻</h2>
-			<p>coming soon😉...visit my github for more</p>
+			<h2>Projects</h2>
+			<div class="projects-grid">
+				<div class="project-card">
+					<h3>Student Records System</h3>
+					<p class="project-lang"><i class="fa-solid fa-c"></i> C</p>
+					<p>A student records management system using CSV file storage. Handles
+					student data persistence, retrieval, and management from the command line.</p>
+					<a href="https://github.com/ejr-arch/ejr-tech.github.io" target="_blank" rel="noopener">
+						<i class="fa-brands fa-github"></i> View on GitHub
+					</a>
+				</div>
+				<div class="project-card">
+					<h3>Calendar Generator</h3>
+					<p class="project-lang"><i class="fa-solid fa-c"></i> C</p>
+					<p>Command-line utility that generates a full calendar for any given year.
+					Demonstrates date algorithms and formatted terminal output.</p>
+					<a href="https://github.com/ejr-arch/calendar_generator" target="_blank" rel="noopener">
+						<i class="fa-brands fa-github"></i> View on GitHub
+					</a>
+				</div>
+				<div class="project-card">
+					<h3>Tic-Tac-Toe</h3>
+					<p class="project-lang"><i class="fa-solid fa-c"></i> C</p>
+					<p>Terminal-based tic-tac-toe game with a simple AI opponent. Built to
+					practice game logic, 2D arrays, and user input handling in C.</p>
+					<a href="https://github.com/ejr-arch/tick-tack-toe" target="_blank" rel="noopener">
+						<i class="fa-brands fa-github"></i> View on GitHub
+					</a>
+				</div>
+				<div class="project-card">
+					<h3>Online Boutique</h3>
+					<p class="project-lang"><i class="fa-brands fa-html5"></i> HTML / CSS</p>
+					<p>A sample e-commerce front-end for an online boutique, showcasing product
+					listing layouts and responsive design principles.</p>
+					<a href="https://github.com/ejr-arch/sales" target="_blank" rel="noopener">
+						<i class="fa-brands fa-github"></i> View on GitHub
+					</a>
+				</div>
+				<div class="project-card">
+					<h3>Neovim Config</h3>
+					<p class="project-lang"><i class="fa-solid fa-l"></i> Lua</p>
+					<p>Fully customized Neovim configuration written in Lua. Includes LSP setup,
+					keybindings, plugin management, and a polished editor experience.</p>
+					<a href="https://github.com/ejr-arch/nvim-config" target="_blank" rel="noopener">
+						<i class="fa-brands fa-github"></i> View on GitHub
+					</a>
+				</div>
+				<div class="project-card">
+					<h3>diphas</h3>
+					<p class="project-lang"><i class="fa-brands fa-html5"></i> HTML / CSS</p>
+					<p>Sample web hosting project — a static site deployed via GitHub Pages
+					for practicing web hosting workflows.</p>
+					<a href="https://github.com/ejr-arch/diphas" target="_blank" rel="noopener">
+						<i class="fa-brands fa-github"></i> View on GitHub
+					</a>
+				</div>
+			</div>
 		</section>
+
 		<section id="contacts">
-			<h2>My Contacts📞</h2>
+			<h2>Contact</h2>
+			<p>Let's connect. I'm always open to collaboration and new opportunities.</p>
 			<nav id="contacts-nav">
-				<a style=":hover{background-color:yellow;color:black;}"
-					href="https://github.com/ejr-arch"><i class="fa-brands fa-github fa-2x"></i></a>
-				<a href="mailto: macmiles670@gmail.com"><i class="fa-solid fa-envelope fa-2x"></i></a>
-				<a href="https://x.com/@elvis_kwagala"><i
-						class="fa-brands fa-square-x-twitter fa-2x"></i></a>
-				<a href="https://linkedin.com/in/elvis-kwagala-2954a33a0"><i
-						class="fa-brands fa-square-linkedin fa-2x"></i></a>
+				<a href="https://github.com/ejr-arch" target="_blank" rel="noopener" aria-label="GitHub">
+					<i class="fa-brands fa-github fa-2x"></i>
+				</a>
+				<a href="mailto:macmiles670@gmail.com" aria-label="Email">
+					<i class="fa-solid fa-envelope fa-2x"></i>
+				</a>
+				<a href="https://x.com/@elvis_kwagala" target="_blank" rel="noopener" aria-label="Twitter / X">
+					<i class="fa-brands fa-square-x-twitter fa-2x"></i>
+				</a>
+				<a href="https://linkedin.com/in/elvis-kwagala-2954a33a0" target="_blank" rel="noopener" aria-label="LinkedIn">
+					<i class="fa-brands fa-square-linkedin fa-2x"></i>
+				</a>
 			</nav>
 		</section>
 	</main>
+
 	<footer>
-		<p style="color:black;">© 2026 Elvis Kwagala. All rights reserved.</p>
+		<p>&copy; 2026 Elvis Kwagala. All rights reserved.</p>
 	</footer>
 </body>
 

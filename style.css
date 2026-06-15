@@ -250,6 +250,51 @@ h2 {
 	box-shadow: none;
 }
 
+.projects-more {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+	border-radius: 12px;
+	border: 2px dashed #30363d;
+	background: #161b22;
+	text-decoration: none;
+	transition: border-color 0.2s, background 0.2s;
+	margin-top: 16px;
+	cursor: pointer;
+}
+
+.projects-more:hover {
+	border-color: #f0e68c;
+	background: #1c2333;
+}
+
+.more-icon {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #8b949e;
+	letter-spacing: 4px;
+	line-height: 1;
+	margin-bottom: 8px;
+	transition: color 0.2s;
+}
+
+.projects-more:hover .more-icon {
+	color: #f0e68c;
+}
+
+.more-label {
+	font-size: 0.9rem;
+	color: #58a6ff;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+
+.projects-more:hover .more-label {
+	color: #f0e68c;
+}
+
 footer {
 	text-align: center;
 	padding: 32px 0 16px;

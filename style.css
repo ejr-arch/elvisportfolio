@@ -114,6 +114,48 @@ h2 {
 	line-height: 1.5;
 }
 
+.project-stack {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-bottom: 12px;
+}
+
+.stack-badge {
+	font-size: 0.72rem;
+	padding: 3px 10px;
+	border-radius: 20px;
+	background: #1c2333;
+	color: #f0e68c;
+	border: 1px solid #2d3348;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+}
+
+.project-card.featured {
+	border-color: #f0e68c;
+	position: relative;
+}
+
+.project-card.featured h3 {
+	padding-right: 80px;
+}
+
+.project-card.featured::before {
+	content: "Featured";
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	font-size: 0.65rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	padding: 4px 10px;
+	border-radius: 6px;
+	background: #f0e68c;
+	color: #0d1117;
+}
+
 .projects-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

@@ -26,14 +26,16 @@
 			<div id="about-text">
 				<h2>About Me</h2>
 				<p>
-					Systems designer and programmer focused on low-level systems programming and
-					embedded systems. I write software that balances performance and memory efficiency
-					without major trade-offs. I'm also a full-stack web developer building practical
-					applications with modern web technologies.
+					Full-stack engineer building production systems across the stack &mdash;
+					from Go microservices and React SPAs to Flutter mobile apps and Firebase-backed
+					platforms. I architect solutions that scale: event-driven backends with Kafka,
+					real-time databases, SSR frontends, and cross-platform clients.
 				</p>
 				<p>
-					Open-source enthusiast running Arch Linux, editing in Neovim, and living in the CLI.
-					I believe in understanding the stack from the metal up.
+					I work with startups and organisations to deliver real products &mdash;
+					marketplaces, school management systems, event platforms, AI-powered tools,
+					and client websites. Open-source enthusiast on Arch Linux, editing in Neovim,
+					living in the CLI.
 				</p>
 			</div>
 		</section>
@@ -42,44 +44,64 @@
 			<h2>Skills & Technologies</h2>
 			<div class="skills-grid">
 				<div class="skill-card">
+					<i class="fa-brands fa-js"></i>
+					<h3>TypeScript / JavaScript</h3>
+					<p>React, Next.js, Node.js, ES6+, DOM APIs</p>
+				</div>
+				<div class="skill-card">
+					<i class="fa-brands fa-golang"></i>
+					<h3>Go</h3>
+					<p>gRPC microservices, REST APIs, clean architecture</p>
+				</div>
+				<div class="skill-card">
+					<i class="fa-brands fa-html5"></i>
+					<h3>HTML & CSS</h3>
+					<p>Semantic markup, responsive layouts, Tailwind</p>
+				</div>
+				<div class="skill-card">
+					<i class="fa-brands fa-flutter"></i>
+					<h3>Flutter / Dart</h3>
+					<p>Cross-platform mobile & desktop apps</p>
+				</div>
+				<div class="skill-card">
+					<i class="fa-solid fa-fire"></i>
+					<h3>Firebase / Supabase</h3>
+					<p>Auth, Firestore, Realtime DB, Storage, RLS</p>
+				</div>
+				<div class="skill-card">
+					<i class="fa-solid fa-database"></i>
+					<h3>PostgreSQL</h3>
+					<p>Schema design, SQL views, RLS policies</p>
+				</div>
+				<div class="skill-card">
 					<i class="fa-solid fa-code"></i>
 					<h3>C</h3>
 					<p>Systems programming, data structures, CLI tools</p>
 				</div>
 				<div class="skill-card">
-					<i class="fa-brands fa-java"></i>
-					<h3>Java</h3>
-					<p>Object-oriented programming, basic application dev</p>
-				</div>
-				<div class="skill-card">
-					<i class="fa-brands fa-html5"></i>
-					<h3>HTML & CSS</h3>
-					<p>Semantic markup, responsive layouts, flexbox/grid</p>
-				</div>
-				<div class="skill-card">
-					<i class="fa-brands fa-js"></i>
-					<h3>JavaScript</h3>
-					<p>DOM manipulation, async patterns, ES6+</p>
+					<i class="fa-brands fa-docker"></i>
+					<h3>Docker</h3>
+					<p>Containerization, Compose, deployment</p>
 				</div>
 				<div class="skill-card">
 					<i class="fa-brands fa-linux"></i>
 					<h3>Linux / Arch</h3>
-					<p>Daily driver, shell scripting, system administration</p>
+					<p>Daily driver, shell scripting, administration</p>
 				</div>
 				<div class="skill-card">
 					<i class="fa-solid fa-terminal"></i>
 					<h3>Neovim</h3>
-					<p>Custom config (Lua), IDE-like workflow, LSP integration</p>
+					<p>Custom Lua config, LSP, IDE-like workflow</p>
 				</div>
 				<div class="skill-card">
 					<i class="fa-brands fa-git-alt"></i>
 					<h3>Git & GitHub</h3>
-					<p>Version control, collaboration, open-source workflow</p>
+					<p>Version control, CI/CD, collaboration</p>
 				</div>
 				<div class="skill-card">
-					<i class="fa-solid fa-microchip"></i>
-					<h3>Embedded Systems</h3>
-					<p>Low-level programming, resource-constrained environments</p>
+					<i class="fa-brands fa-aws"></i>
+					<h3>Cloud & DevOps</h3>
+					<p>Cloud Run, Vercel, GitHub Pages, Firebase</p>
 				</div>
 			</div>
 		</section>
@@ -87,57 +109,102 @@
 		<section id="projects">
 			<h2>Projects</h2>
 			<div class="projects-grid">
-				<div class="project-card">
-					<h3>Student Records System</h3>
-					<p class="project-lang"><i class="fa-solid fa-c"></i> C</p>
-					<p>A student records management system using CSV file storage. Handles
-					student data persistence, retrieval, and management from the command line.</p>
-					<a href="https://github.com/ejr-arch/ejr-tech.github.io" target="_blank" rel="noopener">
+				<div class="project-card featured">
+					<h3>UNCLE JUMONG</h3>
+					<div class="project-stack">
+						<span class="stack-badge">Next.js</span>
+						<span class="stack-badge">Go</span>
+						<span class="stack-badge">gRPC</span>
+						<span class="stack-badge">Kafka</span>
+						<span class="stack-badge">PostgreSQL</span>
+						<span class="stack-badge">Supabase</span>
+						<span class="stack-badge">Docker</span>
+					</div>
+					<p>A marketplace platform connecting university students across Uganda to discover and buy items. Backend is a suite of 9 Go microservices communicating via gRPC with a Redpanda/Kafka event bus. Frontend is a Next.js 14 SSR PWA with TypeScript, Tailwind CSS, and shadcn/ui. Features admin-mediated chat, realtime notifications via FCM, and Meilisearch for search.</p>
+					<a href="https://github.com/ejr-arch/uncle_jumong" target="_blank" rel="noopener">
+						<i class="fa-brands fa-github"></i> View on GitHub
+					</a>
+				</div>
+				<div class="project-card featured">
+					<h3>MediScan HoloLaboratory</h3>
+					<div class="project-stack">
+						<span class="stack-badge">Three.js</span>
+						<span class="stack-badge">Flask</span>
+						<span class="stack-badge">Gemini AI</span>
+						<span class="stack-badge">Node.js</span>
+						<span class="stack-badge">FFmpeg</span>
+						<span class="stack-badge">WebGL</span>
+					</div>
+					<p>An educational anatomy exploration platform combining AI-powered symptom analysis, Pepper's Ghost hologram video visualization, and interactive 3D body models built with Three.js. Features a cascading intelligence pipeline (Gemini API &rarr; Ollama local LLM &rarr; rule-based fallback), speech-to-text input, and dual backends (Flask + Node.js).</p>
+					<a href="https://github.com/ejr-arch/mediscan-hololaboratory" target="_blank" rel="noopener">
 						<i class="fa-brands fa-github"></i> View on GitHub
 					</a>
 				</div>
 				<div class="project-card">
-					<h3>Calendar Generator</h3>
-					<p class="project-lang"><i class="fa-solid fa-c"></i> C</p>
-					<p>Command-line utility that generates a full calendar for any given year.
-					Demonstrates date algorithms and formatted terminal output.</p>
-					<a href="https://github.com/ejr-arch/calendar_generator" target="_blank" rel="noopener">
+					<h3>Aurah Properties</h3>
+					<div class="project-stack">
+						<span class="stack-badge">Firebase</span>
+						<span class="stack-badge">Leaflet.js</span>
+						<span class="stack-badge">Firestore</span>
+						<span class="stack-badge">Auth</span>
+						<span class="stack-badge">Storage</span>
+					</div>
+					<p>A full-featured real estate listing platform for Kampala properties. Features interactive maps via Leaflet.js, property galleries with images and virtual tours, Firebase Authentication for admin access, Firestore for property data, and Firebase Storage for media assets. Includes property seed scripts and admin management.</p>
+					<a href="https://github.com/ejr-arch/aurah-properties" target="_blank" rel="noopener">
 						<i class="fa-brands fa-github"></i> View on GitHub
 					</a>
 				</div>
 				<div class="project-card">
-					<h3>Tic-Tac-Toe</h3>
-					<p class="project-lang"><i class="fa-solid fa-c"></i> C</p>
-					<p>Terminal-based tic-tac-toe game with a simple AI opponent. Built to
-					practice game logic, 2D arrays, and user input handling in C.</p>
-					<a href="https://github.com/ejr-arch/tick-tack-toe" target="_blank" rel="noopener">
+					<h3>CampusConnect (Novara)</h3>
+					<div class="project-stack">
+						<span class="stack-badge">Flutter</span>
+						<span class="stack-badge">Dart</span>
+						<span class="stack-badge">Supabase</span>
+						<span class="stack-badge">PostgreSQL</span>
+					</div>
+					<p>A cross-platform institutional social networking app built with Flutter and Supabase, designed for university communities. Features student/admin authentication, campus feed with social posts, groups, chat, events, directory exploration, and email verification flow. Supports Android, iOS, web, Linux, macOS, and Windows.</p>
+					<a href="https://github.com/novara-tech-org/Campus" target="_blank" rel="noopener">
 						<i class="fa-brands fa-github"></i> View on GitHub
 					</a>
 				</div>
 				<div class="project-card">
-					<h3>Online Boutique</h3>
-					<p class="project-lang"><i class="fa-brands fa-html5"></i> HTML / CSS</p>
-					<p>A sample e-commerce front-end for an online boutique, showcasing product
-					listing layouts and responsive design principles.</p>
-					<a href="https://github.com/ejr-arch/sales" target="_blank" rel="noopener">
+					<h3>MUK Events (muk-luma)</h3>
+					<div class="project-stack">
+						<span class="stack-badge">Firebase</span>
+						<span class="stack-badge">Vite</span>
+						<span class="stack-badge">Cloudinary</span>
+						<span class="stack-badge">Auth</span>
+						<span class="stack-badge">Realtime DB</span>
+					</div>
+					<p>A community event platform for Makerere University with role-based access (Student, Organizer, Admin). Features event discovery, creation, RSVP with real-time updates via Firebase Realtime Database, comments, user profiles, and Cloudinary image uploads. Mobile-first responsive design optimized for low-bandwidth.</p>
+					<a href="https://github.com/ejr-arch/muk-luma" target="_blank" rel="noopener">
 						<i class="fa-brands fa-github"></i> View on GitHub
 					</a>
 				</div>
 				<div class="project-card">
-					<h3>Neovim Config</h3>
-					<p class="project-lang"><i class="fa-solid fa-l"></i> Lua</p>
-					<p>Fully customized Neovim configuration written in Lua. Includes LSP setup,
-					keybindings, plugin management, and a polished editor experience.</p>
-					<a href="https://github.com/ejr-arch/nvim-config" target="_blank" rel="noopener">
+					<h3>Hill View School System</h3>
+					<div class="project-stack">
+						<span class="stack-badge">Supabase</span>
+						<span class="stack-badge">PostgreSQL</span>
+						<span class="stack-badge">PWA</span>
+						<span class="stack-badge">Android</span>
+						<span class="stack-badge">Chart.js</span>
+					</div>
+					<p>A school report management SPA for nursery and primary schools. Uses vanilla HTML/CSS/JS served via GitHub Pages with Supabase providing PostgreSQL, authentication, Row Level Security, and realtime features. Includes PWA support, printable report cards, UNEB grading computed in SQL views, and an Android APK via Trusted Web Activity.</p>
+					<a href="https://github.com/EJr-Tech-Solutions/hill-view-ps" target="_blank" rel="noopener">
 						<i class="fa-brands fa-github"></i> View on GitHub
 					</a>
 				</div>
 				<div class="project-card">
-					<h3>diphas</h3>
-					<p class="project-lang"><i class="fa-brands fa-html5"></i> HTML / CSS</p>
-					<p>Sample web hosting project — a static site deployed via GitHub Pages
-					for practicing web hosting workflows.</p>
-					<a href="https://github.com/ejr-arch/diphas" target="_blank" rel="noopener">
+					<h3>Muslim Ambassadors Uganda</h3>
+					<div class="project-stack">
+						<span class="stack-badge">HTML</span>
+						<span class="stack-badge">CSS</span>
+						<span class="stack-badge">JavaScript</span>
+						<span class="stack-badge">Responsive</span>
+					</div>
+					<p>A static informational website for Muslim Ambassadors Uganda, a youth empowerment and orphan care NGO operating across 116 districts. Features mobile-first responsive design, Google Fonts typography, photo/video gallery, impact statistics, testimonials, donation info, and CSS-only hamburger navigation.</p>
+					<a href="https://github.com/EJr-Tech-Solutions/muslimAmbassadors-ug" target="_blank" rel="noopener">
 						<i class="fa-brands fa-github"></i> View on GitHub
 					</a>
 				</div>
